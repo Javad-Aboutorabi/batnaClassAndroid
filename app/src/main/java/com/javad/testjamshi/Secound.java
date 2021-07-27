@@ -2,7 +2,9 @@ package com.javad.testjamshi;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 public class Secound extends AppCompatActivity {
 
@@ -10,5 +12,10 @@ public class Secound extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_secound);
+        View button3 = findViewById(R.id.BackButton);
+        button3.setOnClickListener(v -> {
+            Intent intent=new Intent(this,MainActivity.class);
+            startActivity(intent);
+        });
     }
 }
