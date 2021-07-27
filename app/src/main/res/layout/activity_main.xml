@@ -7,20 +7,17 @@
     tools:context=".MainActivity">
 
 
-
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonPanel"
         android:layout_width="196dp"
         android:layout_height="84dp"
+        android:text="Toast"
+        android:textAllCaps="false"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:text="Toast"
-        android:textSize="30sp"
-        android:textAllCaps="false"
-        tools:ignore="MissingConstraints"
-        android:onClick="showToast"
-        />
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
