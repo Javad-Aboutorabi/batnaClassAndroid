@@ -14,8 +14,12 @@ public class Secound extends AppCompatActivity {
         setContentView(R.layout.activity_secound);
         View button3 = findViewById(R.id.BackButton);
         button3.setOnClickListener(v -> {
-            Intent intent=new Intent(this,MainActivity.class);
-            startActivity(intent);
+            this.finish();
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+
     }
 }
