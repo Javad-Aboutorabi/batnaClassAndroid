@@ -22,15 +22,31 @@ public class Secound extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_secound);
-        ConstraintLayout constraintLayout=findViewById(R.id.my_layout);
-        text=findViewById(R.id.text1);
-        Typeface type= Typeface.createFromAsset(getAssets(),"fonts/Shekasteh.ttf");
+        ConstraintLayout constraintLayout = findViewById(R.id.my_layout);
+        text = findViewById(R.id.text1);
+        Typeface type = Typeface.createFromAsset(getAssets(), "fonts/Shekasteh.ttf");
         text.setTypeface(type);
         Button button3 = findViewById(R.id.BackButton);
-        EditText editText=findViewById(R.id.editText);
+        EditText editText = findViewById(R.id.editText);
+
+
+        EditText alpha = findViewById(R.id.alpha);
+        EditText red = findViewById(R.id.red);
+        EditText green = findViewById(R.id.green);
+        EditText blue = findViewById(R.id.blue);
+
         button3.setOnClickListener(v -> {
+            if(isEmpty(alpha)) {
+                alpha.setText("250");
+            }
+
+            constraintLayout.setBackgroundColor(Color.argb(
+                    Integer.parseInt(alpha.getText().toString()),
+                    Integer.parseInt(red.getText().toString()),
+                    Integer.parseInt(green.getText().toString()),
+                    Integer.parseInt(blue.getText().toString())
+            ));
             button3.setText(editText.getText());
-            constraintLayout.setBackgroundColor(Color.argb(200,201,11,11));
 
         });
         button3.setOnLongClickListener(v -> {
@@ -41,7 +57,12 @@ public class Secound extends AppCompatActivity {
 
 
     }
+    private boolean isEmpty(EditText etText) {
+        if (etText.getText().toString().trim().length() > 0)
+            return false;
 
+        return true;
+    }
     @Override
     protected void onPause() {
         super.onPause();

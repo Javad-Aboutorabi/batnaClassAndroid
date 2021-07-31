@@ -30,7 +30,6 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:textAlignment="center"
-        android:text="print your text for show"
         android:textColor="@color/red"
         app:layout_constraintBottom_toTopOf="@+id/BackButton"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,7 +53,6 @@
         app:layout_constraintVertical_bias="0.74" />
 
 
-
     <EditText
         android:id="@+id/alpha"
         android:layout_width="75dp"
@@ -67,7 +65,8 @@
         app:layout_constraintHorizontal_bias="0.095"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.183" />
+        app:layout_constraintVertical_bias="0.183"
+        tools:ignore="MissingClass" />
 
     <EditText
         android:id="@+id/blue"
@@ -115,7 +114,7 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="در فیلد های زیر از چپ به راست به ترتیب عدد های آلفا و RGB را وارد کنید (0 - 250)"
+        android:text="در فیلد های زیر از راست به چپ به ترتیب عدد های آلفا و RGB را وارد کنید (0 - 250)"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/red"
         app:layout_constraintEnd_toEndOf="parent"
