@@ -30,7 +30,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:textAlignment="center"
-        android:text="coming soon"
+        android:text="print your text for show"
         android:textColor="@color/red"
         app:layout_constraintBottom_toTopOf="@+id/BackButton"
         app:layout_constraintEnd_toEndOf="parent"
