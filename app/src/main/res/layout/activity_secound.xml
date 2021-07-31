@@ -39,4 +39,18 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.875" />
 
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="409dp"
+        android:layout_height="66dp"
+        android:gravity="center"
+        android:text="این صفحه در حال تکمیل برای تمرین اندروید است"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/BackButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.74" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

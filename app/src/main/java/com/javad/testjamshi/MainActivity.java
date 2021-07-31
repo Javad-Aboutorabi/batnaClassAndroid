@@ -41,8 +41,10 @@ public class MainActivity extends AppCompatActivity {
             button.setScaleX((float) (random.nextFloat()+0.5));
             button.setScaleY((float) (random.nextFloat()+0.5));
         });
-        ImageButton button2;
-        button2 = findViewById(R.id.next);
+        Button button2;
+        button2 = findViewById(R.id.jamshidi);
+        button2.setBackgroundColor(Color.argb(200,85,120,250));
+
         button2.setOnClickListener(v -> {
             Intent intent=new Intent(this,Secound.class);
             startActivity(intent);

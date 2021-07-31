@@ -8,10 +8,10 @@
 
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/buttonPanel"
+        android:id="@+id/jamshidi"
         android:layout_width="196dp"
         android:layout_height="84dp"
-        android:text="Toast"
+        android:text="جمشیدی"
         android:textAllCaps="false"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -20,16 +20,46 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
-    <ImageButton
-        android:id="@+id/next"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/ic_circular"
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/naseri"
+        android:layout_width="196dp"
+        android:layout_height="84dp"
+        android:text="ناصری"
+        android:textAllCaps="false"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonPanel"
-        app:layout_constraintVertical_bias="0.33" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.656"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonPanel"
+        android:layout_width="196dp"
+        android:layout_height="84dp"
+        android:text="Toast"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.346"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="پروفایل مورد نظر را انتخاب کنید"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPanel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
