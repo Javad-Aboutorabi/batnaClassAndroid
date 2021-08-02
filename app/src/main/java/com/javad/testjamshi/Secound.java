@@ -39,6 +39,15 @@ public class Secound extends AppCompatActivity {
             if(isEmpty(alpha)) {
                 alpha.setText("250");
             }
+            if(isEmpty(red)) {
+                red.setText("80");
+            }
+            if(isEmpty(green)) {
+                green.setText("200");
+            }
+            if(isEmpty(blue)) {
+                blue.setText("150");
+            }
 
             constraintLayout.setBackgroundColor(Color.argb(
                     Integer.parseInt(alpha.getText().toString()),
