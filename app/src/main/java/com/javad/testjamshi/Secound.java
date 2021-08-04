@@ -63,6 +63,12 @@ public class Secound extends AppCompatActivity {
             this.finish();
             return false;
         });
+        Button button=findViewById(R.id.layout_activity_run);
+        button.setOnClickListener(v -> {
+            this.finish();
+            Intent intent=new Intent(this,LayoutActivity.class);
+            startActivity(intent);
+        });
 
 
     }
